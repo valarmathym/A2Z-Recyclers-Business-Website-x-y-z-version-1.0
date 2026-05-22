@@ -1,0 +1,1287 @@
+
+*{
+    margin:0em;
+    padding: 0em;
+    border-style: none; 
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7rem;
+}
+body{
+    scroll-behavior: smooth;
+     margin:auto;
+    background-color: #d9dcde;
+      width:100%;
+}
+#wrapper{
+ margin:auto;
+
+}
+/**********************************************    HEADER , LOGO, NAV DETAILS   **********************************************/
+header{
+    height:11rem; 
+    color:#3c1f04;
+    display:flex;
+    flex-direction: row;
+    width:100%; 
+    background-color: hsl(0, 64%, 98%);
+    margin:auto; 
+}
+header span{
+    display:flex;
+    flex-direction: row;
+    line-height: 0.8em;
+    width:12rem;
+    font-weight: 700; 
+}
+/*************************************HAMBURGER MENU FOR MOBILE SCREEN   ***********************************/
+.hamburger{
+    display: none;
+    cursor: pointer;
+    position:absolute;
+    right:30px;
+    top:10px;  
+}
+.bar{
+    display: block;
+    width: 25px;
+    margin: 5px;
+    height: 2px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    background-color:rgb(87, 7, 7);
+}
+#menu-toggle{
+    display:none;
+}
+
+.nav-logo{
+        display:flex;
+        flex-direction:row;
+        float:left;
+        position: absolute;
+        margin-left:1.7rem;
+        max-width:9rem;
+        height:auto;
+        align-items: center;
+        padding-top:1rem;
+         opacity: 0.7;
+}
+.nav-logo span {
+    display:flex;
+    flex-direction: row;
+     color: rgb(11, 60, 36);
+      padding: 0 0.2rem;
+      font-size: 1.9rem;
+      font-weight: 700;
+      width:10rem;
+}   
+/* ********************************              CLOCK WIDGET               ***********************/
+.clock-widget{
+    display:flex;
+    flex-direction: row;
+    width:7.2rem;
+    height:2.1rem;
+    right:3.2rem;
+    top:4.2rem;
+    padding: 0.4rem;
+   border: 1px solid rgb(92, 6, 6);  
+    background-color: #1b6d4e;
+    position:absolute;
+}  
+.nav-container{
+    max-height: 26rem;
+     overflow:hidden;
+}                 
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+     align-items: center;
+    list-style: none;  
+    font-size: 0.8rem;  
+    position: absolute; 
+    background-color: hsl(156, 63%, 13%);
+     top:7.8rem;
+    width:100%;
+    object-fit: contain;
+ 
+}
+.nav-menu a{
+    padding-bottom: 2rem;
+    color: hsl(30, 14%, 97%);
+    font-weight: 700;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu a:hover{
+     border:1px solid #4ca2f4;
+    color: hwb(125 8% 11%); 
+}
+
+.nav-link{
+    text-decoration: none;
+}
+.nav-item{
+    text-align: center;
+    margin:0;
+}
+
+/***********************   INNER-WRAPPER1 /Hero image    *********************************/
+#inner-wrappper1{
+    min-height:30rem; 
+    background-color: rgb(91, 55, 16);
+    margin:auto;
+}
+ #inner-wrappper1 .hero-section{
+       position: absolute;
+        margin:auto;
+        background-color:rgb(91, 55, 16) ;  
+} 
+.heropic img{
+        margin:auto;
+        background-color:rgb(91, 55, 16);
+        max-width:100%;
+}
+
+/*************************              START OF CAROUSEL             *******************/
+
+#inner-wrapper1{
+     background-color:rgb(5, 33, 5);
+
+}
+.carousel-inner{
+    max-height: 100%;
+    max-width: 100%;
+}
+.carousel-inner img{
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+}
+.carousel-inner button{
+    border-radius: 0ch;
+    padding:0 0.4rem;
+    margin: 3rem;
+    opacity: 0.9;
+}
+   
+.carousel-item active{
+    position: relative;
+    display: inline-block;
+    float: none; 
+     transition: 0.5s ease-in-out !important;
+      
+  } 
+    
+ .carousel-control-prev-icon, .carousel-control-next-icon{
+    border:4px solid white;
+    background-color: rgb(91, 92, 92);
+    opacity: 0.7;
+    padding:20px 0;
+    }
+    
+  .carousel-item{
+    overflow-x:hidden;
+    
+  }
+
+/*********************************   END OF CAROUSEL  ***************************************/
+ 
+
+/***********************************      INNER WRAPPER 2 WITH TWO COLUMS / HOME PAGE /        *****************************/
+ #inner-wrapper2{
+       
+        background-color:rgb(247, 246, 242);
+        min-height: 40rem;
+        margin: auto;
+        height: auto;
+        max-width:100%;
+        padding:2rem;
+        color:#0156a3;  
+        object-fit:contain;     
+ } 
+ #inner-wrapper2 h1{
+    font-size: 3.3rem;
+ }
+ 
+ #home .home-pge #home-contents{
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);   
+    padding: 1.2rem 0.8rem;
+    max-width:100%;
+ }
+ 
+ #home .home-pge .hom-content{
+    display:flex;
+    flex-direction: column;
+    background-color:#f6f1f1;
+    padding: 0 20px;
+    margin: 10px;
+   /* column-width:100px;    */
+    text-align: left;
+    font-size:1rem;
+    border: 1px solid #68686c;
+    height:auto;
+    overflow: hidden;
+ }
+ #inner-wrapper2 .house h1{
+    color:#0156a3 ;
+    padding:3.6rem 0; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+  #inner-wrapper2 .recycle-tips p{
+    color:#0156a3 ;
+    font-size: 1.15rem;
+    max-width: 100%;
+    margin:auto;
+    font-weight: 500;
+    padding:1rem 0;
+    
+ }
+ #inner-wrapper2 h1{
+    margin: auto;
+    font-size: 3.1rem;
+    color:#3c1f04;
+    padding: 2rem 0.3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding:0.2rem 2rem;
+ }
+ #inner-wrapper2 h2{
+    margin: auto;
+    color:#3c1f04;
+    padding: 1.6rem 1rem;
+    font-weight: 700;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+/******************************************COMMON ID's  ***************************/
+#inner-wrapper2 #mission-contents, #home-contents, #housetips-contents, #contactus-contents, #news-contents, #busi-contents, #projects-contents, #housetips-contents, .about-testimonials, .about-contents{
+      
+       display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.3rem;
+         max-width:100%;
+         margin:auto;
+        height:auto;
+        padding: 0.8rem 0.3rem;
+        background-color:#eeeeee;
+        border:1px solid rgb(191, 188, 188);
+        text-align: left;
+        color:#0156a3;
+        object-fit:contain;    
+ }
+
+ /*********************************************************************************/
+
+ .home-heading p{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    padding-top: 1.6rem;
+    color:#0156a3;
+    font-size: 1.1rem;
+    margin:auto;
+    font-weight: 600;
+ }
+ 
+ .recycle-home p{
+    max-width:100%;
+    font-size: 1.2rem;
+    margin: auto;
+    color:#0156a3;
+    font-weight: 500;
+ }
+ #home-contents h1{
+    text-align: center; 
+    font-size:2.2rem; 
+    color:#6c4603; 
+     margin:auto;  
+}  
+#home-contents h2{
+    padding:1rem 0;
+    font-size:2rem; 
+    font-weight: 500;
+}
+
+ .hom-content p,li{
+     text-align: left;
+    font-size:1.1rem;
+    color:#0156a3;
+    font-weight: 500;
+    padding:0.6rem 0;
+}
+
+.hom-content  .tips{
+    border: 2px solid rgb(187, 183, 183);
+    border-radius: 1.5px;
+    font-family:cursive;
+    color:#0e06f3;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin:auto;
+}
+h5{
+   color:#0f0c4a;
+   font-weight: 500;
+   font-size: 1.2rem;
+}
+
+.hom-content .recycle-pic{
+     
+     margin:auto;
+     width:18rem;
+     height:11rem;
+     object-fit:contain;
+}
+/********************************************************    NEWS         ******************************************/
+#news{
+    min-width:100%;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    object-fit:contain;
+}
+
+/*****************************************************************HOUSEHOLD AND BUSINESS TIPS PAGE    **************************/ 
+ .recycle-tips p{
+
+    width:100%;
+ }
+ .recycle-pic{
+        width:18rem;
+        height:14rem;
+        margin: auto;
+        justify-content: center;
+        border:1px solid rgb(216, 211, 211);
+        object-fit:none;
+ }
+ .business-pic{
+    width:24rem;
+    height:14rem;
+    margin: auto;
+    align-items: center;
+    border:1px solid rgb(79, 77, 77);
+    object-fit:contain;
+ }
+/*********************************           NEWS PAGE                  ************************/
+ #workshop-regform{
+    width:23rem;
+ }
+
+/***** *************************************   LOGIN,,REGISTRATION PAGES         *******************************************************/
+#inner-wrapper2{
+    padding-top:2rem;
+}
+#register-section{
+    padding:2rem;
+}
+#member{
+    font-size: 1rem;
+    font-weight: 800;
+    height:auto;
+    color: #0156a3;
+    background-color: #f9f9ee; 
+    border:2rem solid #868787;
+    padding:1.5rem;
+    max-width: 100%;
+    margin:auto;
+   
+    }
+ #register{
+        font-size: 0.9rem;
+        font-weight: 800;
+        height:auto;
+        color: #0156a3;
+        background-color: #f3f5f7; 
+        border:1rem solid #8b8f93;
+        padding:1.2rem;
+         margin:auto;
+         max-width: 100%;
+       
+     } 
+    #member h1, #register h1{
+        color:#0156a3; 
+        font-weight: 600;
+    } 
+    span{
+    color:red;
+}
+
+.form-group p{
+    font-size: 1.3rem;
+    width: 100%;
+    color:#1008e9;
+    text-align: left;
+}
+.form-group a{
+    font-size: 1.2rem;
+    color:#572b03;
+    font-weight: 700;
+}
+#login-box, #register-box{
+   
+    padding: 1.4rem;
+    max-width:100%;
+}
+
+/*********************************         ABOUT US  PAGE         ----------------------------------------*/
+
+#wrapper-about #about-contents{
+    /* gap: 1.8rem;
+    grid-template-columns: 1fr 1fr; */
+    padding: 3.8rem 0.1rem;
+    text-align: left;
+  /*  border: 1px solid #f0f1f4;  */
+    width:100%;  
+}
+.abt-content{
+  display:flex;
+  flex-direction: column;
+  padding-top:3.4rem;
+  padding-bottom:1rem;
+}
+
+#abt-banner{
+     padding:2rem 0;
+     margin:auto;
+}
+.aboutus{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+     width:100%;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     background-color: #f8f9f1;
+    
+}   
+.aboutus{
+     font-size: 1.1rem;  
+     color:#101838;
+     font-weight: 400;
+}
+
+.aboutus #inner-wrapper2 h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 3.1rem;
+    text-align: center;
+    color:#030a2c;
+     padding-bottom:32rem;
+       font-weight: 500;
+    margin:auto;
+    text-align: center;
+    color:#212843;
+    padding:1.5rem;
+}
+  
+.aboutus h1{
+    font-size: 2.8rem;
+    text-align: center;
+}
+.aboutus h3{
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin:auto;
+    text-align: center;
+    color:#6e6b68;
+    padding:4rem;
+}
+.aboutus p{
+    color:#0a2bb1;
+    margin:auto;
+    padding:0 2rem;
+    font-weight: 500;
+}
+
+ /***********************************About Us - Testimonial  GRID   *******************************/
+
+
+.testimonial-content{
+    display:flex;
+    flex-direction: column;
+    background-color:#eeeeee;
+    margin:auto;
+    text-align: left;
+    font-size:1.2rem;
+    column-gap: 10px;
+    width:80%;
+    font-weight: 500;
+    color:blue;
+    padding:2rem 2.3rem; 
+}
+.aboutus-banner img{
+    padding:0;
+    padding-left: 0;
+    width:100%;
+    background-color: rgb(136, 171, 126);
+}
+#abt-banner{
+   border:3px solid rgb(7, 54, 34);
+   padding-left:1rem;
+}
+/************************************************   MISSION  PAGE  **********************************/
+
+.mission .msn-content{
+     display:flex;
+    flex-direction: column; 
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:#0156a3;
+    padding:2rem;
+}
+.mission-pic{
+       max-width: 100%;
+        width:18rem;
+        height:14rem;
+        margin: auto;
+        justify-content: center;
+        border:1px solid rgb(79, 77, 77);
+        object-fit:none;
+ }
+
+.mission-banner img{
+    padding:7rem;
+    padding-left: 6rem;
+    width:100%;
+    background-color: rgb(8, 32, 8);
+    padding:2rem 0;
+     margin: auto;
+     padding:1rem;
+}
+
+
+/*********************** ********           CONTACT FORM        *********** *****************************/
+#contact{
+    display: flex;
+    flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    background-color: #d2d1d0;  
+}
+#contact h1{
+     color:#0156a3;
+     font-size: 4rem;;
+     font-weight:700;
+     padding: 2rem;
+     font-weight: 700;
+}
+
+#contact .contactus-contents{
+  
+    padding: 1rem 1.2rem;
+    margin:auto;
+    max-width:100%;
+    color: #0156a3;
+    text-align:left;
+    background-color: #d2d1d0;  
+     height: auto;
+     object-fit:contain;
+}
+#form{
+    padding:2rem;
+}
+
+ #contact .contact-content{
+     display:flex;
+    flex-direction:column;
+    background-color: #e9e8e7;;
+    margin:auto;
+    text-align: left;
+    font-size:1.2rem;
+    max-width:100%;
+    font-weight: 500;
+    color:#0156a3;
+    padding:2rem 2.2rem; 
+    }
+.contact-content p, li{
+    text-align: left;
+    max-width: 100%;
+    color:rgb(8, 8, 100);
+    padding-left:2rem;
+    list-style: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contact-content h2{
+    margin:auto;
+    padding: 1rem;
+}
+.contact-content iframe{
+    width:100%;
+    height:450px;
+    padding:1rem 7rem;
+    max-height:30rem;
+    padding:3rem 4rem;
+    margin: auto;
+}
+.contact-content p a{
+    padding: 2px;
+    text-decoration: none;
+    color:black;
+}
+.contact-content ul li{
+    text-decoration: none;
+    padding:10px 0; 
+    color:#3c1f04;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.contact-content .location{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(212, 76, 13);
+}
+input{
+    border: 1px solid  #000;
+    display: block;	
+    margin-top: 0.5rem;
+    width: 75%;
+    height:30px;
+}
+
+textarea  { 
+    border: 1px solid  #000;
+    display: block;
+    margin-top: 10px;
+    width: 75%;
+    height:auto;
+}
+input[type="textarea"]{
+    width: 75%;
+    height: 2.5rem;
+  
+    background-color: #faf9f6;
+}
+
+input[type="text"]{
+    width: 75%;
+    height: 2.5rem;
+    
+    background-color: #faf9f6;
+}
+input[type="email"]{
+     width: 75%;
+    height: 2.5rem;
+   
+    background-color: #faf9f6;
+}
+
+input[type="submit"]  {
+    border: 2px solid  #0a0e3c;
+    padding: 3px 7px;	
+    width: 70px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color:hsl(47, 74%, 45%);   
+}  
+
+#button {
+    border-radius: 1.6rem;
+    width:8rem;
+    height:2.6rem;
+    color:blue;
+}
+ /****************************************        End of Contact Form        *********************************/
+/*************************************************LOGIN PAGE & REGISTER PAGE    **********************************/
+#login-page footer{
+    margin-top:30rem;
+    padding-bottom:0;
+    bottom:0;
+}
+.login-page{
+    margin-top:12rem;
+}
+.register-page{
+     margin-top:6rem;
+     margin-bottom:10rem; 
+}
+
+/***************************************                NEWS PAGE           ****  *****************/
+ #news{
+     height:52rem;
+     padding:3rem;
+ }
+ /*************************** ************    START OF FOOTER                ************************************/
+ footer {
+    margin:auto;
+    width:100%;
+    background-color:rgb(46, 38, 38);
+     bottom:0.2rem;
+    font-size: 1rem;
+}
+
+.footer-wrapper {
+
+    font-family: 'Calibri', 'Arial', 'Helvetica', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    background-color: #282836;
+    color:#fff;
+    line-height: 0.3rem;
+     padding-top: 1rem;
+     height:auto;
+} 
+footer p{
+    font-size: 1rem;
+     margin:auto;
+     align-items: center;
+     padding:1rem 4rem;
+     justify-content:space-around;
+}
+#footer-links{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+    padding:0;
+}
+#footer-links ul{
+    display:flex;
+    flex-direction: column;
+    text-align:left ;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+     font-size: 0.9rem;
+    }
+ #footer-links ul li{
+    padding:0;
+ }
+#footer-links .util{
+    line-height: 0.3rem;
+    text-decoration: none;
+    color: white;
+     font-weight: 600;
+    
+    
+    }
+#footer-links .header-menus a{
+    color:white;
+}
+#socials {
+    display: flex;
+    flex-direction: column;
+    max-width: 32rem;
+   justify-content: flex-start;
+    align-items:center;
+    margin: auto;
+    bottom:0;
+    color:white;
+    width:100%;
+    }
+ 
+.social{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content:space-around;
+        margin:auto;
+    }
+   
+ .social .copyright p{
+        color:white;
+        width:100%;
+        font-size:1.4rem;
+        font-weight: 400;
+         padding-bottom: 1.2rem;
+    }
+#socials img{
+        /*width: 70%; */
+        max-width: 2.9rem;   /*actual width   */
+        height: auto;
+        padding:0 0.6rem;
+        
+    }  
+/***************************************       END OF FOOTER                 ***********************************/ 
+
+/************************************************************************************************************************
+                                                   
+                                                 MEDIA QUERIES
+
+                                          MEDIA QUERY FOR TABLET AND DESKTOP
+**********************************************************************************************************************/
+
+ 
+@media only screen and (min-width:767px)and (max-width:1080px) {
+ 
+    .nav-link{
+       font-size: 0.8rem;
+         max-width:100%;
+        justify-content: space-around;
+        height: 3.2rem;
+        padding-top: 1.1rem; 
+    }
+    #inner-wrapper h1{
+        font-size: 1.3rem;
+        padding:1rem 3rem;
+    }
+   
+
+}   
+
+/************************************************************************************************************************
+                                                 MEDIA QUERIES for LAPTOP AND DESKTOP
+**********************************************************************************************************************/
+
+
+@media only screen and (min-width:767px) { 
+ 
+
+    #inner-wrapper2 h1{
+    font-size: 2.5rem;
+
+  }
+ #home-contents{
+        display: flex;
+        flex-direction:row; 
+    }    
+  
+    #form{
+        padding:0.5rem;
+        width:100%;
+    }
+    .login-page{
+        margin-top:12rem;
+    }
+    .register-page{
+        margin-top:6rem;
+        margin-bottom:10rem;
+    }  
+#home-contents, #contactus-contents{
+       margin: auto;
+        display: grid;
+        gap: 0.2rem;
+        grid-template-columns: repeat(2, 1fr);  
+        padding: 1.1rem 0;
+        margin:0.2rem;
+        max-width:100%;
+        background-color:#eeeeee;
+        text-align: left;
+        color:#0156a3; 
+        object-fit:contain;  
+}
+.contact-content p, li{
+    padding: 0.6rem;
+    
+}
+#hom-content{
+    object-fit:contain; 
+}
+}    
+
+
+/************************************************** ******************************************************************************
+                                                          MEDIA QUERIES FOR MOBILE PHONE /SMALL DEVICES                                                  
+ ******************************************************************************************************** **************************/
+@media screen and (min-width: 320px) and (max-width: 475px){ 
+#wrapper{
+    overflow: hidden;
+}
+  #inner-wrapper2 h1{
+    font-size: 1.1rem;
+
+  }
+#inner-wrapper2 p{
+    font-size: 0.6rem;
+    text-align: left;
+    left:0;
+    padding:0;
+    margin:0;
+}
+  .nav-logo img{
+     width:50%;
+     height:50%;
+  }  
+  .nav-logo span{
+   font-size:1.4rem;
+  }
+  .clock-widget{
+    width:38%;
+    height:2.7rem;
+    right:1rem;
+    top:4.2rem;
+    font-size: 0.4rem;
+}  
+ 
+  #home-contents{
+    padding: 0;
+    margin:0;
+  }
+ .hom-content .recycle-pic{
+    max-width:100%;
+    height:50%;
+    margin-right:0.2rem;
+    margin:auto
+  }
+
+  #mission-contents{
+    display:flex;
+    flex-direction: column;
+    max-width: 100%;
+    
+  }
+  .mission-pic{
+    max-width:100%;
+    object-fit:contain; 
+  }
+  .msn-content{
+    text-align: left;
+    left:0;
+    padding:0;
+    margin:0;
+  }
+  .contactus-contents{
+   max-width:100%;
+   font-size: 0.8rem;
+   padding-left: 0;
+   text-align: left;
+  }
+  #home-contents{
+    max-width: 100%;
+  }
+/**********************login, register   **************/
+  #register, #member p a{
+    font-size: 0.8rem;
+}
+#login-section{
+    height: auto;
+    padding:0;
+}
+#member h1{
+   font-size: 1rem;
+}
+#register h1{
+   font-size: 1rem;
+}
+.form-group input{
+    width:100%;
+    padding: 0;
+    font-size: 0.6rem;
+    margin: auto;
+}
+.form-group label{
+    font-size: 0.8rem;
+}
+.form-group a{
+  font-size: 0.7rem;
+}
+#member-login div{
+  font-size: 0.9rem;
+}
+/***********************************************************/
+  #footer-links ul li a{
+    font-size: 0.6rem;
+    margin: auto;
+    text-align: left;
+     line-height: 0.5rem;
+  
+  }
+   footer{
+      max-width: 100%;
+       height:auto;
+        padding-bottom:1rem;
+        margin:auto;
+        margin-bottom: 0.4rem;
+    }
+
+}
+
+/************************************************        MEDIA QUERY  FOR MOBILE PHONES  ***************************/
+@media screen and (min-width: 320px) and (max-width: 767px){  
+
+    header{
+            height: 7.3rem; 
+        }
+    .main{
+            max-width:100%;  
+        }
+    .nav{
+        background-color:rgb(29, 29, 147);    
+        color: #5c0909;
+        padding-bottom: 0.3rem;  
+      }
+    .nav-logo{
+       position: absolute;
+       max-width:40%;
+       top:0.09rem;
+    }
+    #menu-toggle{
+        top: 10px;
+        right: 0;
+    }
+ 
+   .nav-menu{
+        display:none;
+        flex-direction: column;
+        width: 50%;
+        padding: 1.2rem 1rem;
+        top: 7.2rem;
+        left: 0.2rem;
+        align-items: flex-start;
+        background-color: hsl(109, 88%, 16%);
+        z-index: 2;
+        opacity: 0.7;
+        position:absolute;
+    }
+    .nav-menu a{
+        top: 2.3rem;
+        left: 0.2rem;
+        padding-bottom: 1.2rem;
+        color: rgb(248, 247, 246);
+        font-weight: 700;
+        justify-content: space-around;
+        align-items: center;
+}
+    .nav-menu a{
+        padding:0.2rem;
+        
+    }
+    .nav-item{
+      margin: 0.2rem;
+      font-size: 1.1rem;  
+    }
+
+    .nav-menu.active{
+        display: flex;
+        max-width:80px;
+    }
+    
+    #menu-toggle:checked ~.nav-menu{
+        display: flex;
+    }
+     .hamburger{
+        display: block; 
+        padding-right: 8px;
+        padding-top: 10px;
+    }
+
+   
+.hero-section{
+       position: absolute;
+        width: 100%;
+        margin:auto;
+        background-color:#f4b56de1;  
+}   
+/************************************       HOME page  MAIN CONTENT    *********************************/ 
+.main{
+    margin-bottom:0;
+}
+ #inner-wrapper2 h1{
+    font-size: 2.2rem;
+
+  }
+#inner-wrapper2{
+      margin:auto;
+    text-align: center; 
+    max-width:100%;
+   /* max-height:150rem;  */
+    height:auto;
+    position:relative;
+    margin-bottom: 0;
+}
+.new-content{
+    min-width:100%;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    object-fit:contain;
+}
+
+#inner-wrapper2 h1{
+    font-size: 2rem;
+    max-width:100%;
+}
+#news-contents{
+    margin:0;
+    height: auto;
+}
+
+#inner-wrapper2 .home-heading {
+    margin-top: 100rem;
+    margin:auto;
+}
+#inner-wrapper2 .home-heading h1{
+    font-size: 1.4rem;
+}
+#home .home-contents{
+   
+     font-size: 0.7rem;
+}
+ #inner-wrapper2 #home-contents, #mission-contents, #housetips-contents, #busi-contents, #projects-contents, #news-contents, #contactus-contents, .about-contents, .about-testimonials{
+       
+     display:flex;
+    flex-direction: column; 
+ }  
+
+/**************************************CONTACT PAGE    *************************************************/
+#contactus-contents{
+           object-fit:contain;
+           display:flex;
+}
+.contact-content{
+       text-align: left;   
+       flex-direction: column;
+       font-size: 0.5rem;
+       max-width: 100%;
+       padding-left:0 ;
+}
+.contact-content p a {
+font-size: 0.8rem;
+}
+.contact-content #form{
+font-size: 0.8rem;
+
+}
+
+.contact-content iframe{
+       max-width: 100%;
+        padding: 0.3rem ;
+        margin:0.4rem;
+        margin:auto;
+        height: auto;
+}
+/****************************************REGISTER, LOGIN PAGE  ****************************/
+#register, #member{
+    font-size: 0.9rem;
+    text-align: left;
+}
+#register, #member p a{
+    font-size: 0.9rem;
+}
+#login-section{
+    height: auto;
+    padding:0;
+}
+#member, #register h1{
+   font-size: 1.5rem;
+}
+.form-group input{
+    width:100%;
+    padding: 0;
+    font-size: 0.8rem;
+    margin: auto;
+}
+.form-group a{
+  font-size: 0.8rem;
+  padding-top: 0.4rem;
+}
+/*********************************************END OF FORM   ******************************/
+/***********************************************HOME CONTENT      ************************************/
+
+
+#inner-wrapper1{
+    height:auto;
+    margin: auto;
+}
+#inner-wrapper2{
+    height:auto;
+    width:100%;
+    margin-bottom: 0;
+}
+#inner-wrapper2 p{
+    font-size: 0.8rem;
+}
+#inner-wrapper2 ul li{
+    font-size: 0.8rem;
+}
+#inner-wrapper2 h1{ 
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+#inner-wrapper2 h2{ 
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.heropic{
+    height:auto;
+    padding:0;
+    margin:auto;
+    margin:0;
+}
+#news{
+    height:auto;
+    padding:0.3rem;
+}
+ #news-contents{
+    margin: auto;
+    height: auto;
+    margin-bottom: 0;
+          
+}
+
+/********************************About page  ********************************************/
+.about h1{
+      font-size: 2.2rem;
+}
+#abt-banner{
+    padding:2rem 0;
+    border:2px solid rgb(21, 74, 21);
+}
+   
+/*********************************************MISSION PAGE       *********************************/
+.mission-pic{
+   
+         width: 100%;
+        height:auto;
+        margin: auto;
+        align-items: center;
+        border:1px solid rgb(79, 77, 77);
+        object-fit: contain;
+       
+ }
+ /**********************************************House-tips, business tips   *************************/
+ .house-tips img{
+    width:70%;
+    height:70%;
+    margin:auto
+ }
+/*********************************FOOTER   **********************************************************/
+ #wrapper-home footer{
+    margin-top: 0;
+    height:auto;
+    line-height: 0.2; 
+    max-width: 100%;
+ }
+ .footer-wrapper{
+    width:100%;
+    height:auto;
+    padding: 1rem 0;
+    margin:auto;
+ }
+ 
+.social, #socials{
+    font-size: 0.8rem;
+}
+.footer-column{
+    max-width:100%;
+   height:auto;
+}
+.footer-wrapper #utilities{
+    font-size: 0.7rem;
+    
+}
+.footer-wrapper p{
+    font-size: 0.8rem;
+}
+
+#utilities .util-contact{
+     font-size:0.6rem;
+}
+.footer-links{
+   width: 70%
+}
+.footer-wrapper p{
+    font-size: 0.8rem;
+}
+.footer-wrapper ul li{
+    font-size: 0.8rem;
+}
+
+   
+}
+
+
