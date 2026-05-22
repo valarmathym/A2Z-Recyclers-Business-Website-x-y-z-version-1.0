@@ -109,8 +109,8 @@ Completed – Version 1.0
 
 ---
 
-## Author
-[Your Name]
+## 👨‍💻 Author
+Valarmathy
 
 ---
 
